@@ -1,2 +1,1 @@
-# zapiski
-Zapiski in načbe, pretežno iz matematičnih predmetov
+Zapiski, ki jih pišem ob svojem študiju.
