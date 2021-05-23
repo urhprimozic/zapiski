@@ -13,13 +13,12 @@
 \def\Q{\mathbb{Q}} % mnozica racionalnih stevil
 \def\R{\mathbb{R}} % mnozica realnih stevil
 \def\C{\mathbb{C}} % mnozica kompleksnih stevil
-\def\dif{\mathrm{d}}
-\newcommand{\geslo}[2]{\noindent\textbf{#1} \quad \hangindent=1cm #2\\[-1pc]}
-\newcommand{\norm}[1]{\lVert #1 \rVert _\infty}
-\newcommand{\n}[1]{\lVert #1 \rVert }
+\def\dif{\mathrm{d}} % znak za diferencial d 
 
 
-\newcommand{\scalar}[2]{\langle #1 \, , #2 \rangle}
+\newcommand{\norminf}[1]{\lVert #1 \rVert _\infty} % neskončna norma
+\newcommand{\norm}[1]{\lVert #1 \rVert } % norma
+\newcommand{\scalar}[2]{\langle #1 \, , #2 \rangle} % skalarni produkt
 \def\qed{$\hfill\Box$}   % konec dokaza
 \def\qedm{\qquad\Box}   % konec dokaza v matematičnem načinu
 \newtheorem{izrek}{Izrek}
@@ -33,23 +32,12 @@
 
 \begin{document}
 \tableofcontents
-\section{Funkciji Gama in Beta}
+
+\section{Parcialni ulomki}
 $$
-\Gamma(z) = \int\limits_0^\infty t^{z-1} e^{-t}\dif t
+\frac{1}{(x-a)^n} = \frac{A_1}{x-a} + \cdots + \frac{A_n}{(x-a)^n}
 $$
-%
-in
-%
-$$\beta (p, q) = \int\limits_0^1 t^{p-1} (1-t)^{q-1} \dif t 
-= \int\limits_0^\infty \frac{t^p}{(1+t)^{p+q}} \dif t
-= 2 \int\limits_0^{\pi /2} \sin^{2q-1}\varphi \cos ^{2p-1} \varphi \dif \varphi
-$$
-Velja
-\begin{align*}
-    \Gamma\left( \frac{1}{2} \right)  &= \sqrt{\pi}\\    
-    \Gamma(n) &= (n-1)!\\
-    \Gamma(s+1) &= s\Gamma(s)\\
-    \beta (p, 1-p) &= \frac{\pi}{\sin \pi p}
-\end{align*}
+$A_1, \cdots, A_n$ so konstante
+
 
 \end{document}
